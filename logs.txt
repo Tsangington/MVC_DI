@@ -14,3 +14,5 @@ INFO:root:Exit
 INFO:root:Finished
 INFO:root:Start
 INFO:root:Asking Name
+INFO:root:Start
+INFO:root:Asking Name
