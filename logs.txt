@@ -12,3 +12,5 @@ INFO:root:Asking Options
 
 INFO:root:Exit
 INFO:root:Finished
+INFO:root:Start
+INFO:root:Asking Name

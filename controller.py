@@ -5,9 +5,14 @@ import logging
 
 class Controller:
     def __init__(self, model: Model, view: View, config: Config) -> None:
-        self.model = model
-        self.view = view
-        self.config = config
+        # Manual Dependency Injection:
+        # self.model = Model()
+        # self.view = view()
+        # self.config = config()
+        
+        self.model = model #Dependency injection
+        self.view = view #Dependency injection
+        self.config = config #Dependency injection
 
         logging.info("Start")
         model.save_text(view.ask_name())

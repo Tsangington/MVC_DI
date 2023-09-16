@@ -2,7 +2,7 @@ from config import Config
 import logging
 class Model:
     def __init__(self, config: Config) -> None:
-        self.database =  config.databasePath
+        self.database =  config.databasePath  #Manual Dependency injection
 
     def save_text(self, text):
         logging.debug(f"Saving {text} to database")

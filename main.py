@@ -6,8 +6,10 @@ import logging
 
 logging.basicConfig(filename='logs.txt', encoding='utf-8', level=logging.DEBUG)
 
-config = Config()
-model = Model(config)
-view = View()
-controller = Controller( model, view, config)
+#Own Dependency injection?
 
+if __name__ == "__main__":
+    config = Config()
+    model = Model(config)
+    view = View()
+    controller = Controller( model, view, config)
