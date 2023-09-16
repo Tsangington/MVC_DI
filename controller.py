@@ -1,10 +1,13 @@
 from view import View
 from model import Model
+from config import Config
 
 class Controller:
-    def __init__(self, model: Model, view: View) -> None:
+    def __init__(self, model: Model, view: View, config: Config) -> None:
         self.model = model
         self.view = view
+        self.config = config
+
         model.save_text(view.ask_name())
         while True:
             option = view.ask_options()
@@ -16,4 +19,4 @@ class Controller:
                 view.exit()
                 break
             else:
-                print("Invalid Option, try again")
+                view.invalid()
