@@ -1,0 +1,14 @@
+INFO:root:Start
+INFO:root:Asking Name
+
+INFO:root:Asking Options
+
+INFO:root:Asking Name
+
+INFO:root:Asking Options
+
+INFO:root:Showing Name: Silas
+INFO:root:Asking Options
+
+INFO:root:Exit
+INFO:root:Finished
